@@ -1,26 +1,22 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "New Alenia Bold";
+  src: url("/fonts/New Alenia Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Biennale";
+  src: url("/fonts/Fontspring-DEMO-biennale-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    font-family: "alenia", sans-serif;
+  /*  font-family: "Biennale", sans-serif;*/
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
