@@ -1,4 +1,5 @@
 import { websiteContent } from "../data/mockDatas";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -47,21 +48,33 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative #FD34FF flex justify-center items-center pt-10 bg-[radial-gradient(closest-side_at_center,_#FD34FF_10%,_#0770FD_20%,_#FFFFFF_70%)]">
-        <img
+        <Image
           src="/images/heroImg1.png"
-          alt="hero"
-          className="relative z-10"
+          alt="Hero photo"
+          width={300}
+          height={300}
+          priority
         />
-        <div className="absolute top-20 left-2 bg-gray-200 rounded-md size-16">
-          <img
+        <div className="absolute top-20 left-2 bg-gray-200 flex items-center
+        justify-center rounded-md size-16">
+          <Image
             src="/images/Target.svg"
-            alt="hero"
+            alt="Profile photo"
+            width={50}
+            height={50}
+            priority
           />
         </div>
-        <div className="absolute bottom-30 right-2 bg-gray-200 rounded-md size-16">
-          <img
+        <div
+          className="absolute bottom-30 right-2 flex items-center
+        justify-center bg-gray-200 rounded-md size-16"
+        >
+          <Image
             src="/images/Market_Analysis.svg"
-            alt="hero"
+            alt="Profile photo"
+            width={50}
+            height={50}
+            priority
           />
         </div>
       </div>
