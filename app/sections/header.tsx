@@ -1,11 +1,13 @@
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
+import SlideDown from "../components/SlideDown";
 
 const Header = () => {
   return (
-    <header className="relative h-dvh pt-20">
+    <header className="relative pt-20">
       <NavBar />
       <Hero />
+      <SlideDown />
     </header>
   );
 };

@@ -1,4 +1,4 @@
- /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -16,18 +16,24 @@ module.exports = {
         grey: "#627186",
         accentWhite: "#FFFFFF",
       },
+
       fontFamily: {
-        alenia: ['"New Alenia Bold"', 'sans-serif'],
-        biennale: ['"Biennale"', 'sans-serif'],
+        alenia: ['"New Alenia Bold"', "Inter", "sans-serif"],
+        biennale: ['"Biennale"', "Inter", "sans-serif"],
       },
-      backgroundImage: {
-        'elvanex-gradient': 'linear-gradient(90deg, #0770FD 0%, #FD34FF 50%, #1FEDFB 100%)',
-      },
-      boxShadow: {
-        elvanex: '0 4px 14px rgba(7, 112, 253, 0.25)',
-      },
+    },
+    fontFamily: {
+      sans: ['"Biennale"', "Inter", "sans-serif"], // default
+    },
+
+    backgroundImage: {
+      "elvanex-gradient": "linear-gradient(120deg, #0770FD 0%, #FD34FF 50%, #1FEDFB 100%)",
+    },
+    boxShadow: {
+      elvanex: "0 2px 10px rgba(7, 112, 253, 0.25)",
+      card: "0 2px 8px rgba(7, 112, 253, 0.25)",
+       
     },
   },
   plugins: [],
 };
- 

@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap")
+
 @font-face {
   font-family: "New Alenia Bold";
   src: url("/fonts/New Alenia Bold.otf") format("opentype");
@@ -17,6 +20,6 @@
 @layer base {
   html {
     font-family: "alenia", sans-serif;
-  /*  font-family: "Biennale", sans-serif;*/
+  
   }
 }
