@@ -39,7 +39,9 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="relative #FD34FF flex justify-center items-center pt-10 bg-[radial-gradient(closest-side_at_center,_#FD34FF_10%,_#0770FD_20%,_#FFFFFF_70%)]">
+      <div className="relative #FD34FF flex justify-center items-center pt-10
+      bg-[radial-gradient(closest-side_at_center,_#FD34FF_10%,_#0770FD_20%,_#FFFFFF_70%)]
+      md:pl-5">
         <Image
           src="/images/heroImg1.png"
           alt="Hero photo"
