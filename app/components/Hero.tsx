@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 pt-2 px-4 md:grid-cols-2 md:gap-96">
+    <div className="grid grid-cols-1 pt-2 px-4 md:grid-cols-2">
       <div>
         <p
           className="text-sm font-extralight uppercase tracking-tighter ring-1
@@ -12,7 +12,8 @@ const Hero = () => {
           Build and Market
         </p>
         <h1
-          className="text-2xl pt-4 font-extrabold bg-elvanex-gradient bg-clip-text text-transparent"
+          className="text-2xl pt-4 font-extrabold bg-elvanex-gradient
+          bg-clip-text text-transparent md:text-4xl"
         >
           Elvanex Digital &mdash; Giving <br /> visibility to brands.
         </h1>
