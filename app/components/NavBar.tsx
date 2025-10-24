@@ -15,7 +15,7 @@ const NavBar = () => {
           <li
             key={ind}
             className="last:bg-sapphireSurge last:text-white last:uppercase
-            last:rounded-md last:px-2 hover:cursor-pointer not-last:hover:underline
+            last:rounded-md last:px-2 hover:cursor-pointer hover:not-last:underline
             "
           >
             {data}
