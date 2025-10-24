@@ -14,7 +14,8 @@ const NavBar = () => {
         {websiteContent[0]?.content?.map((data, ind) => (
           <li
             key={ind}
-            className="last:bg-sapphireSurge last:text-white last:font-bold last:rounded-md last:px-2"
+            className="last:bg-sapphireSurge last:text-white last:uppercase
+            last:rounded-md last:px-2 hover:pointer hover:underline"
           >
             {data}
           </li>

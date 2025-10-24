@@ -4,7 +4,7 @@ import SlideDown from "../components/SlideDown";
 
 const Header = () => {
   return (
-    <header className="relative pt-20">
+    <header className="relative pt-20 md:h-dvh">
       <NavBar />
       <Hero />
       <SlideDown />
