@@ -23,21 +23,18 @@ const Hero = () => {
           data.
         </p>
         <div className="flex gap-2 items-center justify-between py-2">
-          {websiteContent[1]?.highlights?.map((item, ind) =><HighLight  key={ind} {...item} />
-            )
-          }
+          {websiteContent[1]?.highlights?.map((item, ind) => (
+            <HighLight
+              key={ind}
+              {...item}
+            />
+          ))}
         </div>
         <div className="flex gap-3 items-center font-alenia py-4 justify-between">
-          <button
-            className="px-3 py-1.5 rounded-md text-white font-bold text-center
-          bg-sapphireSurge outline-none border-0 w-full"
-          >
-            Let's talk
+          <button className="px-3 py-1.5 rounded-md text-white font-bold text-center bg-sapphireSurge outline-none border-0 w-full">
+            Lets talk
           </button>
-          <button
-            className="px-3 py-1.5 rounded-md text-white font-bold text-center
-          bg-gray-400 outline-none border-0 font-alenia w-full"
-          >
+          <button className="px-3 py-1.5 rounded-md text-white font-bold text-center bg-gray-400 outline-none border-0 font-alenia w-full">
             Our work
           </button>
         </div>
