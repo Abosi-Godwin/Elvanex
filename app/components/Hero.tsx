@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 pt-2 px-4 md:grid-cols-2">
+    <div className="grid grid-cols-1 pt-2 px-4 md:grid-cols-2 md:gap-20 md:py-10">
       <div>
         <p
           className="text-sm font-extralight uppercase tracking-tighter ring-1
@@ -13,7 +13,7 @@ const Hero = () => {
         </p>
         <h1
           className="text-2xl pt-4 font-extrabold bg-elvanex-gradient
-          bg-clip-text text-transparent md:text-4xl"
+          bg-clip-text text-transparent md:text-6xl"
         >
           Elvanex Digital &mdash; Giving <br /> visibility to brands.
         </h1>
@@ -22,7 +22,7 @@ const Hero = () => {
           We help brands turn bold ideas into measurable success through strategy, creativity, and
           data.
         </p>
-        <div className="flex gap-2 items-center justify-between py-2">
+        <div className="flex gap-2 items-center justify-between py-2 md:py-8">
           {websiteContent[1]?.highlights?.map((item, ind) => (
             <HighLight
               key={ind}
