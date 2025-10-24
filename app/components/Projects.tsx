@@ -13,7 +13,7 @@ const Projects = () => {
       </div>
       <h1 className="text-2xl font-bold text-center pt-5 capitalize">Our latest projects</h1>
       <div className="grid grid-cols-1 gap-6 px-3 py-10">
-        {projects.map((data) => (
+        {projects?.map((data) => (
           <Project
             key={data.id}
             {...data}

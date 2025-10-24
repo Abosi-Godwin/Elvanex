@@ -23,14 +23,9 @@ const Hero = () => {
           data.
         </p>
         <div className="flex gap-2 items-center justify-between py-2">
-          {websiteContent[1].highlights.map((item, ind) => {
-            return (
-              <HighLight
-                data={item}
-                key={ind}
-              />
-            );
-          })}
+          {websiteContent[1]?.highlights?.map((item, ind) =><HighLight  key={ind} {...item} />
+            )
+          }
         </div>
         <div className="flex gap-3 items-center font-alenia py-4 justify-between">
           <button
@@ -55,8 +50,10 @@ const Hero = () => {
           height={300}
           priority
         />
-        <div className="absolute top-20 left-2 bg-gray-200 flex items-center
-        justify-center rounded-md size-16">
+        <div
+          className="absolute top-20 left-2 bg-gray-200 flex items-center
+        justify-center rounded-md size-16"
+        >
           <Image
             src="/images/Target.svg"
             alt="Profile photo"
@@ -84,11 +81,15 @@ const Hero = () => {
 
 export default Hero;
 
-export const HighLight = ({ data }) => {
+interface DataProps {
+  rate: string;
+  tagline: string;
+}
+export const HighLight = ({ rate, tagline }: DataProps) => {
   return (
     <div className="flex flex-col items-center justify-center py-4">
-      <h1 className="font-bold font-alenia">{data.rate}</h1>
-      <p className="text-sm font-light text-center tracking-tighter">{data.tagline}</p>
+      <h1 className="font-bold font-alenia">{rate}</h1>
+      <p className="text-sm font-light text-center tracking-tighter">{tagline}</p>
     </div>
   );
 };

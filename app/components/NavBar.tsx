@@ -11,20 +11,14 @@ const NavBar = () => {
     >
       <Logo />
       <ul className="hidden justify-between items-center md:flex">
-        {websiteContent[0].content.map((data, ind) => {
-          const isLast = ind === websiteContent[0].content.length - 1;
-          return !isLast ? (
-            <li key={ind}>{data}</li>
-          ) : (
-            <li
-              key={ind}
-              className="bg-white font-bold rounded-md px-2
-            text-sapphireSurge"
-            >
-              {data}
-            </li>
-          );
-        })}
+        {websiteContent[0]?.content?.map((data, ind) => (
+          <li
+            key={ind}
+            className="last:bg-sapphireSurge last:text-white last:font-bold last:rounded-md last:px-2"
+          >
+            {data}
+          </li>
+        ))}
       </ul>
       <div className="flex justify-end items-center text-2xl md:hidden">
         <FaBars />
