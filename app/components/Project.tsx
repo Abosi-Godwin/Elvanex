@@ -12,7 +12,8 @@ interface ProductProps {
 }
 const Project = ({ id, title, category, description, image, link }: ProductProps) => {
   return (
-    <div className="rounded-md overflow-hidden shadow-card bg-white">
+    <div className="rounded-md overflow-hidden shadow-card bg-white
+    text-darkCharcoal">
       <div className="relative group overflow-hidden">
         <Image
           src={image}
@@ -26,7 +27,7 @@ const Project = ({ id, title, category, description, image, link }: ProductProps
           <p>{description}</p>
           <Button
             text="see live"
-            style={null}
+            
           />
         </div>
       </div>
@@ -37,7 +38,7 @@ const Project = ({ id, title, category, description, image, link }: ProductProps
         >
           {category}
         </p>
-        <h1 className="text-2xl font-bold py-4 pr-4">{title}</h1>
+        <h1 className="text-2xl font-bold py-4 pr-4 text-graphite">{title}</h1>
       </div>
     </div>
   );

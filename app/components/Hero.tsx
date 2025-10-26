@@ -12,7 +12,7 @@ const Hero = () => {
           Build and Market
         </p>
         <h1
-          className="text-2xl pt-4 font-extrabold bg-elvanex-gradient
+          className="text-3xl pt-4 font-extrabold bg-elvanex-gradient
           bg-clip-text text-transparent md:text-5xl"
         >
           Elvanex Digital &mdash; Giving <br /> visibility to brands.

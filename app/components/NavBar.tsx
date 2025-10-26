@@ -11,16 +11,15 @@ const NavBar = () => {
     >
       <Logo />
       <ul className="hidden justify-between items-center md:flex">
-        {websiteContent[0]?.content?.map((data, ind) => (
-          <li
-            key={ind}
-            className="last:bg-sapphireSurge last:text-white last:uppercase
-            last:rounded-md last:px-2 hover:cursor-pointer hover:not-last:underline
-            "
-          >
-            {data}
-          </li>
-        ))}
+      {websiteContent[0]?.content?.map((data, ind) => (
+  <li
+    key={ind}
+    className="last:bg-sapphireSurge last:text-white last:uppercase last:rounded-md last:px-2
+               md:[&:not(:last-child):hover]:underline hover:cursor-pointer"
+  >
+    {data}
+  </li>
+))}
       </ul>
       <div className="flex justify-end items-center text-2xl md:hidden">
         <FaBars />
