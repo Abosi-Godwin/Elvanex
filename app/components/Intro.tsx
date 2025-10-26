@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import Line from "./Line";
+import PaintBrush from "./PaintBrush";
 
 const Intro = () => {
   return (
@@ -34,8 +35,9 @@ const Intro = () => {
         </div>
       </div>
       <div className="order-1 py-10 md:order-2 md:pl-5">
-        <div className="flex gap-3 items-center">
-          <p className="px-2 my-5 bg-gray-100 rounded-md w-fit uppercase">creative growth</p>
+        <div className="">
+          <p className="px-2 my-5 rounded-md w-fit uppercase">creative growth</p>
+        <PaintBrush />
         </div>
         <div
           className="pt-4 text-3xl font-extrabold bg-elvanex-gradient  bg-clip-text

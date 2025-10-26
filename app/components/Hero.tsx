@@ -1,6 +1,6 @@
 import { websiteContent } from "../data/mockDatas";
 import Image from "next/image";
-
+import PaintBrush from "../components/PaintBrush";
 const Hero = () => {
   return (
     <div className="grid grid-cols-1 pt-2 px-4 md:grid-cols-2 md:gap-20 md:py-10">
@@ -11,6 +11,7 @@ const Hero = () => {
         >
           Build and Market
         </p>
+        <PaintBrush />
         <h1
           className="text-3xl pt-4 font-extrabold bg-elvanex-gradient
           bg-clip-text text-transparent md:text-5xl"
@@ -39,9 +40,11 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="relative #FD34FF flex justify-center items-center pt-10
+      <div
+        className="relative #FD34FF flex justify-center items-center pt-10
       bg-[radial-gradient(closest-side_at_center,_#FD34FF_10%,_#0770FD_20%,_#FFFFFF_70%)]
-      md:pl-5">
+      md:pl-5"
+      >
         <Image
           src="/images/heroImg1.png"
           alt="Hero photo"

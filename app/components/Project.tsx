@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "../components/Button";
 
@@ -12,8 +13,10 @@ interface ProductProps {
 }
 const Project = ({ id, title, category, description, image, link }: ProductProps) => {
   return (
-    <div className="rounded-md overflow-hidden shadow-card bg-white
-    text-darkCharcoal">
+    <div
+      className="rounded-md overflow-hidden shadow-card bg-white
+    text-darkCharcoal"
+    >
       <div className="relative group overflow-hidden">
         <Image
           src={image}
@@ -25,10 +28,9 @@ const Project = ({ id, title, category, description, image, link }: ProductProps
         />
         <div className="absolute top-full left-0 bg-black/40 text-white text-sm p-2 flex flex-col gap-2 transition-all duration-300 transform translate-y-full transition-all duration-300 group-hover:-translate-y-full">
           <p>{description}</p>
-          <Button
-            text="see live"
-            
-          />
+          <Link href={`/projects/${id}`}>
+            <Button text="see live" />
+          </Link>
         </div>
       </div>
       <div className="p-3">

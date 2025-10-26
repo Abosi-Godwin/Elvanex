@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elvanex || global success magnet",
+  title: "Elvanex | global success magnet",
   description: "Elvanex agency",
 };
 
